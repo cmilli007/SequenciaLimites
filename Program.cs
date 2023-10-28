@@ -1,11 +1,18 @@
 ﻿Console.Clear();
-int numeroUm;
-int numeroDois;
+int numeroUm= Int32.MinValue;
+int numeroDois= Int32.MaxValue;
 int aux;
 do
 
  {
-    Console.WriteLine("Inicio:");
+
+if (numeroUm != Int32.MinValue || numeroDois != Int32.MaxValue);
+    {
+        Console.Clear();
+        Console.WriteLine($"O fim ({numeroDois}) não pode ser menor que o inicio ({numeroUm})");
+        Console.WriteLine();
+    }
+        Console.WriteLine("Inicio:");
     Int32.TryParse(Console.ReadLine(),out numeroUm);
     
     Console.WriteLine("Fim:");
